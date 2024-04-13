@@ -1,5 +1,5 @@
 # 베이스 이미지 선택 (예: AdoptOpenJDK 17)
-FROM adoptopenjdk:17-jdk
+FROM openjdk:17-alpine
 
 # 컨테이너 내에서 작업 디렉토리 설정
 WORKDIR /app
