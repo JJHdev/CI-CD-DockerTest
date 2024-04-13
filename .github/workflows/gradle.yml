@@ -39,8 +39,9 @@ jobs:
         contains(github.ref, 'master') ||
         contains(github.ref, 'dev')
       run: |
+        # 디렉토리가 존재하지 않는 경우에만 생성
         if [ ! -d "./src/main/resources" ]; then
-            mkdir ./src/main/resources
+            mkdir -p ./src/main/resources
         fi                      # resources 폴더 생성 디렉토리가 있을경우 에러가 떠서 없을 경우에만 실행
         cd ./src/main/resources # resources 폴더로 이동
         touch ./application.yml # application.yml 생성
