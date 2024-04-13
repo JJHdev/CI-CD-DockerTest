@@ -10,7 +10,6 @@ on:
   push:
     branches: [ "master" , "dev"]
 
-  
 jobs:
   CI-CD:
     runs-on: ubuntu-latest
